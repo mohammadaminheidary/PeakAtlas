@@ -1,78 +1,168 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="assets/css/main_page_style.css" />
-        <title>PeakAtlas</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <button class="hamburger" id="hamburger">☰</button>
-                <div class="logo-section">
-                    <a href="#">
-                        <img
-                            src="assets/images/logos/mountain.png"
-                            alt="logo"
-                            class="logo"
-                        />
-                        <h1>PeakAtlas</h1>
-                    </a>
-                </div>
-                <div class="link-section">
-                    <a href="#">Home</a>
-                    <a href="#">Explore</a>
-                    <a href="#">Countries</a>
-                    <a href="#">Mountains</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Articles</a>
-                    <a href="#">About</a>
-                </div>
-                <form>
-                    <input type="search" placeholder="Search" />
-                    <button type="button" class="search-btn">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 24 24"
-                        >
-                            <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
-                            <path
-                                fill="#ffffff"
-                                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
-                            />
-                        </svg>
-                    </button>
-                </form>
-            </nav>
-        </header>
-        <main>
-            <section class="video-intro">
-                <video
-                    src="assets/video/My Movie 1.mp4"
-                    autoplay
-                    loop
-                    muted
-                ></video>
-                <div class="overlay"></div>
-                <div class="content">
-                    <p>
-                        Discover The <br />World's Most <br />Majestic Mountains
-                    </p>
-                    <p>
-                        Explore the highest and most beautiful mountains
-                        <br />in every country
-                    </p>
-                    <div>
-                        <button>Explore Mountain</button>
-                        <button>View Article</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer></footer>
-        <script src="assets/js/main.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main_page_style.css" />
+    <title>PeakAtlas</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="hamburger" id="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 14 14"
+          >
+            <!-- Icon from Streamline by Streamline - https://creativecommons.org/licenses/by/4.0/ -->
+            <path
+              fill="none"
+              stroke="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 2H6m5 5H3.5m5 5h-8"
+            />
+          </svg>
+        </button>
+        <div class="logo-section">
+          <a href="#">
+            <img
+              src="assets/images/logos/mountain.png"
+              alt="logo"
+              class="logo"
+            />
+            <h1>PeakAtlas</h1>
+          </a>
+        </div>
+        <div class="link-section">
+          <a href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Countries</a>
+          <a href="#">Mountains</a>
+          <a href="#">Gallery</a>
+          <a href="#">Articles</a>
+          <a href="#">About</a>
+        </div>
+        <form>
+          <input type="search" placeholder="Search" />
+          <button type="button" class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+              <path
+                fill="#ffffff"
+                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+              />
+            </svg>
+          </button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section class="video-intro">
+        <video src="assets/video/My Movie 1.mp4" autoplay loop muted></video>
+        <div class="overlay"></div>
+        <div class="content">
+          <p>Discover The <br />World's Most <br />Majestic Mountains</p>
+          <p>
+            Explore the highest and most beautiful mountains
+            <br />in every country
+          </p>
+          <div>
+            <button>Explore Mountain</button>
+            <button>View Article</button>
+          </div>
+        </div>
+      </section>
+      <section class="country-filter">
+          <div class="card-country" id="border-radius-switzerland">
+            <img
+              src="assets/images/pictures/Gemini_Generated_Image_191qo1191qo1191q.png"
+              alt=""
+              class="image-mountain"
+            />
+            <div class="card-country-info">
+              <img
+                src="assets/images/icones/flag/EmojioneV1FlagForSwitzerland.svg"
+                alt="flagSwitzerland"
+                class="flag"/>
+              <p>Switzerland</p>
+              <p>28 Mountain</p>
+            </div>
+          </div>
+          <div class="card-country">
+            <img
+              src="assets/images/pictures/Gemini_Generated_Image_6kjm2f6kjm2f6kjm (1).png"
+              alt=""
+              class="image-mountain"
+            />
+            <div class="card-country-info">
+              <img
+                src="assets/images/icones/flag/TwemojiFlagForFlagNepal.svg"
+                alt="flagNepal"
+                class="flag"
+              />
+              <p>Nepal</p>
+              <p>36 Mountain</p>
+            </div>
+          </div>
+          <div class="card-country" id="border-canada">
+            <img
+              src="assets/images/pictures/Gemini_Generated_Image_co8fcpco8fcpco8f.png"
+              alt=""
+              class="image-mountain"
+            />
+            <div class="card-country-info">
+              <img
+                src="assets/images/icones/flag/EmojioneV1FlagForCanada.svg"
+                alt="flagCanada"
+                class="flag"
+              />
+              <p>Canad</p>
+              <p>35 Mountain</p>
+            </div>
+          </div>
+          <div class="card-country">
+            <img
+              src="assets/images/pictures/Gemini_Generated_Image_68e97a68e97a68e9.png"
+              alt=""
+              class="image-mountain"
+            />
+            <div class="card-country-info">
+              <img
+                src="assets/images/icones/flag/TwemojiFlagForFlagArgentina.svg"
+                alt="flagNepal"
+                class="flag"
+              />
+              <p>Argentina</p>
+              <p>19 Mountain</p>
+            </div>
+          </div>
+          <div class="card-country" id="border-radius-japan">
+            <img
+              src="assets/images/pictures/Gemini_Generated_Image_f93cdaf93cdaf93c.png"
+              alt=""
+              class="image-mountain"
+            />
+            <div class="card-country-info">
+              <img
+                src="assets/images/icones/flag/TwemojiFlagForFlagJapan.svg"
+                alt="flagNepal"
+                class="flag"
+              />
+              <p>Japan</p>
+              <p>15 Mountain</p>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
